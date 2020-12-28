@@ -3,7 +3,7 @@ Template repository for the Nansen Legacy R workshop: GitHub session.
 
 Below, you can find instructions on what each participant has to do in this session.
 
-Part 1: Working on your own repository
+**Part 1: Working on your own repository**
 
   1. Create your own repository (the green button that says 'New' on the organisation home page)
   
@@ -82,7 +82,7 @@ Part 1: Working on your own repository
   13. Repeat steps 7 to 12 until you feel comfortable with this process.
   
  
-Part 2: Working together on a repository
+**Part 2: Working together on a repository**
 
   1. Creator of respository: Add someone else to your repository so that they can also make changes.
   
@@ -103,7 +103,7 @@ Part 2: Working together on a repository
   7. Creator of repository: Depending on your account setup, you may have received an email regarding this pull request. Go to your repo on GitHub. You can now review it and, if you choose to, accept the changes and merge them with the main branch. This can all be done on the GitHub page.
   
   
-Part 3: Suggesting changes to someone else's repository.
+**Part 3: Suggesting changes to someone else's repository**
 
 To avoid confusion, please don't start this part until you are certain that the person whose repository you are forking has also completed part 2 step 7.
 
