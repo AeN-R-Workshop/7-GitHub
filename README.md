@@ -1,5 +1,4 @@
-# Template
-Template repository for the Nansen Legacy R workshop: GitHub session.
+# Instructions for the Nansen Legacy R workshop: GitHub session.
 
 Below, you can find instructions on what each participant has to do in this session.
 
