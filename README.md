@@ -47,7 +47,7 @@ Part 1: Working on your own repository
   
     git pull
   
-  *This isn't neccessary in this case as you know that you are the only person working on your respository, but it is a good habit to pull after your have pushed to check if any changes have been made by someone else. 
+  *This isn't neccessary in this case as you know that you are the only person working on your respository, but it is a good habit to pull after your have pushed to check if any changes have been made by someone else.* 
   
   8. Create a new branch for testing. This is good practice when you don't want to make changes to the main branch.
   
