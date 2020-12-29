@@ -109,7 +109,7 @@ Below, you can find instructions on what each participant has to do in this sess
   
   5. Collaborator: Navigate to the repository online on GitHub
   
-  6. Collaborator: Submit a pull request - a green button labelled 'Compare & pull request' should have appeared at the top of the page. You can leave a comment for the creator of this repo; why are you submitting this pull request? This can be more extensive than the commit message.
+  6. Collaborator: Submit a pull request - a green button labelled 'Compare & pull request' should have appeared at the top of the page. You can leave a comment for the creator of this repo; why are you submitting this pull request? This can be more extensive than the commit message. This is a great way to log changes you are making to a repository, and can even be done if you are working on a repository by yourself; you can merge you own pull requests!
   
   7. Creator of repository: Depending on your account setup, you may have received an email regarding this pull request. Go to your repo on GitHub. You should see a number '1' next to Pull requests on the bar at the top of the page. You can now review it and, if you choose to, accept the changes and merge them with the main branch. This can all be done on the GitHub page. You can also leave a comment to start a conversation with the person who created the pull request, before you accept or reject it.
   
