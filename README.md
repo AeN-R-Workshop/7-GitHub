@@ -1,12 +1,12 @@
 # Instructions for the Nansen Legacy R workshop: GitHub session.
 
-Below, you can find instructions on what each participant has to do in this session.
+Below, you can find instructions on what each participant has to do in this session. Whilst it should be possible to work through this without any experience with Git, the webinar I hosted (An introduction to Git and GitHub - see Yammer) provides more understanding of what each step does. You can view this webinar for reference throughout; everything covered in this session should be included. There are also many excellent explanations for each step online, since Git and GitHub are widely used.
 
 **Part 1: Working on your own repository**
 
-  1. Create your own repository (the green button that says 'New' on the organisation home page)
+  1. Create your own repository (the green button that says 'New' on the organisation home page). Make it public, and select the options to include a README and license file (GNU Public License v3.0). The optional description will populate the README.md file.
   
-  2. Navigate to where you want to work. Some useful bash commands for those unfamiliar with working in a terminal.
+  2. Working locally now, open your Git Bash terminal. Linux users can open their regular terminal. Navigate to where you want to work. Some useful bash commands for those unfamiliar with working in a terminal.
   
     pwd - lists the full path name of the current working directory
     ls - lists the contents of the current working directory
@@ -20,8 +20,12 @@ Below, you can find instructions on what each participant has to do in this sess
   Navigate into it.
   
     cd NAME_OF_REPO_YOU_HAVE_CLONED
+  
+  You can show the remote 'origin' of this repo using the command
+  
+    git remote -v
 
-  3. Working locally now, create a basic .txt file in the repository using your favourite text editor. This could contain anything, e.g.
+  3. Create a basic .txt file in the repository using your favourite text editor. This could contain anything, e.g.
     a) Your top 5 favourite music artists
     b) A list of things you need to buy from the shop
     c) As many names beginning with the letter 'L' that you can think of.
@@ -30,9 +34,17 @@ Below, you can find instructions on what each participant has to do in this sess
   
     notepad newFile.txt
 
+  Of course you can do this all with code, but let's make the files themselves as simple as possible for now. They are not the focus of this session.
+  
   4. 'Add' the changes you have made in the repo to the staging area.
   
     git add newFile.txt
+    
+  To show what has been added:
+  
+    git status
+    
+  This can also be used to show the status after later stages in this exercise.
 
   5. Commit these changes, with a suitable message
   
@@ -66,7 +78,7 @@ Below, you can find instructions on what each participant has to do in this sess
     
     git commit -m "Write something brief and useful here"
   
-  11. Checkout the main branch again. Merge your test branch with the main branch. Delete your test branch.
+  11. Checkout the main branch again. Merge your test branch with the main branch. Assuming this runs without error, delete your test branch.
   
     git checkout main
     
@@ -74,7 +86,7 @@ Below, you can find instructions on what each participant has to do in this sess
     
     git branch -d testBranch
   
-  12. Push your changes.
+  12. Push your changes. Have a look at your GitHub repo online!
   
     git push origin main
     
@@ -97,20 +109,20 @@ Below, you can find instructions on what each participant has to do in this sess
   
   5. Collaborator: Navigate to the repository online on GitHub
   
-  6. Collaborator: Submit a pull request
+  6. Collaborator: Submit a pull request - a green button labelled 'Compare & pull request' should have appeared at the top of the page. You can leave a comment for the creator of this repo; why are you submitting this pull request? This can be more extensive than the commit message.
   
-  7. Creator of repository: Depending on your account setup, you may have received an email regarding this pull request. Go to your repo on GitHub. You can now review it and, if you choose to, accept the changes and merge them with the main branch. This can all be done on the GitHub page.
+  7. Creator of repository: Depending on your account setup, you may have received an email regarding this pull request. Go to your repo on GitHub. You should see a number '1' next to Pull requests on the bar at the top of the page. You can now review it and, if you choose to, accept the changes and merge them with the main branch. This can all be done on the GitHub page. You can also leave a comment to start a conversation with the person who created the pull request, before you accept or reject it.
   
   
 **Part 3: Suggesting changes to someone else's repository**
 
 To avoid confusion, please don't start this part until you are certain that the person whose repository you are forking has also completed part 2 step 7.
 
-  1. Fork the repository to your personal page. This creates a copy of the repository.
+  1. In the top right of the repo you want to make a copy of, select 'Fork'. Fork the repository to your personal account - don't worry, you will be able to delete it later. This creates a copy of the repository on your personal page. You should be automatically redirected to the forked repo on GitHub - notice that it says this in the top left of the page.
+  
+  2. Clone this forked repository so you can work on it locally. 
   
     git clone https://github.com/...
-  
-  2. Clone this forked repository so you can work on it locally.
   
   3. Create a branch, make changes, add, commit (steps 8 to 10 in part 1). DO NOT MERGE.
   
@@ -118,6 +130,6 @@ To avoid confusion, please don't start this part until you are certain that the 
   
     git push origin testBranch
   
-  5. Submit a pull request. Here, you are requesting that the changes you have made on your forked repository should be pulled into the original project.
+  5. Go to the forked repo on GitHub. Change the branch you are viewing by using the drop-down icon that will say 'main' by default (below '<> Code' at the top left of the page). You should now see that this branch is 1 commit (or more) ahead of the main branch in the original repository you forked. Submit a pull request. At the top, you can see and select what you are pulling to and from. Here, you want to request that the changes you have made on the test branch of your forked repository should be pulled into the main branch of the original project.
   
   6. Creator of repository: Review the pull request as in part 2 step 7.
