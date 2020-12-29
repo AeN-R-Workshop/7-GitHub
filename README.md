@@ -133,3 +133,5 @@ To avoid confusion, please don't start this part until you are certain that the 
   5. Go to the forked repo on GitHub. Change the branch you are viewing by using the drop-down icon that will say 'main' by default (below '<> Code' at the top left of the page). You should now see that this branch is 1 commit (or more) ahead of the main branch in the original repository you forked. Submit a pull request. At the top, you can see and select what you are pulling to and from. Here, you want to request that the changes you have made on the test branch of your forked repository should be pulled into the main branch of the original project.
   
   6. Creator of repository: Review the pull request as in part 2 step 7.
+  
+If you want to delete the repository on your personal page, navigate to it, and select settings > options > scroll to the bottom and select 'Delete this repository'.
