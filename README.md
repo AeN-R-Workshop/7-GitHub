@@ -4,6 +4,8 @@ Below, you can find instructions on what each participant has to do in this sess
 
 **Part 1: Working on your own repository**
 
+In part 1, we will get familiar with some basic commands on GitHub. Below is a common workflow that you might adopt if you are working on a repository by yourself - although the workflow in part 2 can also be used when working on one person repositories too!
+
   1. Create your own repository (the green button that says 'New' on the organisation home page). Make it public, and select the options to include a README and license file (GNU Public License v3.0). The optional description will populate the README.md file.
   
   2. Working locally now, open your Git Bash terminal. Linux users can open their regular terminal. Navigate to where you want to work. Some useful bash commands for those unfamiliar with working in a terminal.
@@ -34,9 +36,9 @@ Below, you can find instructions on what each participant has to do in this sess
   
     notepad newFile.txt
 
-  Of course you can do this all with code, but let's make the files themselves as simple as possible for now. They are not the focus of this session.
+  Of course you can use Git on more complicated files, but let's make the files themselves as simple as possible for now. They are not the focus of this session!
   
-  4. 'Add' the changes you have made in the repo to the staging area.
+  4. Save your file in the repo. 'Add' the changes you have made in the repo to the staging area.
   
     git add newFile.txt
     
@@ -50,17 +52,17 @@ Below, you can find instructions on what each participant has to do in this sess
   
     git commit -m "Created file newFile.txt"
   
-  6. Push these changes to the origin on GitHub. Here, 'origin' refers to where the repo is hosted online, and 'main' is the default name of the branch (previously master in repos created before October 2020).
+  6. Push these changes to the origin on GitHub. Here, 'origin' refers to the URL of where the repo is hosted online, and 'main' is the default name of the branch (previously master in repos created before October 2020).
   
     git push origin main
   
-  7. Pull the local repository. This pulls any changes that may have been made to the repository. 
+  7. Pull the local repository. This pulls any updates that exist on GitHub to your local repository. 
   
     git pull
   
   *This isn't neccessary in this case as you know that you are the only person working on your respository, but it is a good habit to pull after your have pushed to check if any changes have been made by someone else.* 
   
-  8. Create a new branch for testing. This is good practice when you don't want to make changes to the main branch.
+  8. Create a new branch for testing. This is good practice when you don't want to make changes to the main branch, which should be only the main workflow (approved/released versions).
   
     git branch testBranch
     
@@ -86,7 +88,7 @@ Below, you can find instructions on what each participant has to do in this sess
     
     git branch -d testBranch
   
-  12. Push your changes. Have a look at your GitHub repo online!
+  12. Push your changes. Have a look at your GitHub repo online! You should see your updates.
   
     git push origin main
     
@@ -95,15 +97,17 @@ Below, you can find instructions on what each participant has to do in this sess
  
 **Part 2: Working together on a repository**
 
-  1. Creator of respository: Add someone else to your repository so that they can also make changes.
+In part 2, we will focus on collaborating with other people on a project. Below outlines the best practice for this. You will get the opportunity to add someone else to the repository you created in Part 1, so they can make updates. You will then be able to approve (if you wish!) these updates before they are merged into the main workflow. You will also get the opportunity to be added to someone elses repository, so you can see both sides of how it works.
+
+  1. Creator of respository: Add someone else to your repository so that they can also make changes. To do this, go to your repository on GitHub. On the top bar, go to 'Settings'. On the left bar, go to 'Manage Access'. Then press the green button 'Invite teams or people' and write in the email of the person you want to add. 
   
-  2. Collaborator: Clone the repository so you can work on it on your local computer. Navigate into it.
+  2. Collaborator: Go to https://github.com/notifications. Accept access to the repo. Then open your Git Bash terminal. Clone the repository so you can work on it on your local computer. Navigate into it.
   
     git clone https://github.com/...
   
-  3. Collaborator: Create a new branch, make some changes, add and commit (steps 8 to 10 in part 1). DO NOT MERGE.
+  3. Collaborator: Create and checkout a new branch, make some changes, add and commit (steps 8 to 10 in part 1). DO NOT MERGE.
   
-  4. Collaborator: Push these changes to the origin
+  4. Collaborator: Push these changes to the origin. This time, note that you are pushing the branch you have created, not the main branch.
   
     git push origin testBranch
   
@@ -116,9 +120,11 @@ Below, you can find instructions on what each participant has to do in this sess
   
 **Part 3: Suggesting changes to someone else's repository**
 
+There might be times that you want to suggest updates to a repository that you are not assigned to. Perhaps you have been using a script that someone else has developed, but it doesn't work on your data. Maybe there is a mistake, or perhaps you want to make improvements to the script. Let's look at how this works.
+
 To avoid confusion, please don't start this part until you are certain that the person whose repository you are forking has also completed part 2 step 7.
 
-  1. In the top right of the repo you want to make a copy of, select 'Fork'. Fork the repository to your personal account - don't worry, you will be able to delete it later. This creates a copy of the repository on your personal page. You should be automatically redirected to the forked repo on GitHub - notice that it says this in the top left of the page.
+  1. In the top right of the repo you want to make a copy of, select 'Fork'. Fork the repository to your personal account - don't worry, you will be able to delete it later. This creates a copy of the repository on your personal page. You should be automatically redirected to the forked repo on GitHub - notice that it says this in the top left of the page. By default, 'forking' will copy only the main branch, which should be production ready.
   
   2. Clone this forked repository so you can work on it locally. 
   
