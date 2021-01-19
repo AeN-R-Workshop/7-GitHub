@@ -15,7 +15,7 @@ In part 1, we will get familiar with some basic commands on GitHub. Below is a c
     cd - change directory. You can do this relative to where you are currently located. Press TAB to autocomplete
     mkdir - make a new directory
 
-  3. Clone the respository so you can work on it on your local computer. Use the URL of the repo page.
+  3. Clone the respository so you can work on it on your local computer. Use the URL of the repo page. Use the middle mouse button to paste into your Git Bash terminal.
   
     git clone https://github.com/...
   
